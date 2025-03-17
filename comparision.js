@@ -3,6 +3,7 @@ console.log("2" > 1); // true, string '2' gets converted to a number
 console.log(null == 0); // false, null and undefined are only equal to themselves and each other (== can not convert null to 0)
 console.log(null>0); // false, null gets converted to 0
 console.log(null>=0); // true, null gets converted to 0
+
 console.log(undefined == 0); // false, undefined gets converted to NaN
 console.log(undefined > 0); // false, undefined gets converted to NaN
 console.log(undefined < 0); // false, undefined gets converted to NaN
