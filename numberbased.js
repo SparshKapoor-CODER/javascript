@@ -167,6 +167,18 @@ console.log(Math.random() * 100); // Any random number between 0.0 to 100.0
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 // language codes :
 
 
@@ -301,6 +313,29 @@ console.log(Math.random() * 100); // Any random number between 0.0 to 100.0
 // toLocaleString("or-IN-u-nu-orya")   // Oriya with Oriya digits
 // toLocaleString("as-IN-u-nu-beng")    // Assamese with Bengali digits (same as Bengali script)
 // toLocaleString("ur-IN-u-nu-arab")    // Urdu with Arabic-Indic digits
+// toLocaleString("ar-SA-u-nu-arab")    //Arabic (Saudi Arabia) with Arabic-Indic digits
+// toLocaleString("fa-IR-u-nu-arab")    // Persian (Iran) with Arabic-Indic digits
+// toLocaleString("ps-AF-u-nu-arab")   // Pashto with Arabic-Indic digits
+// toLocaleString("ku-IQ-u-nu-arab")    // Kurdish with Arabic-Indic digits
+// toLocaleString("en-US-u-nu-latn")   // English (US) with Latin digits (Default)
+// toLocaleString("ru-RU-u-nu-cyrl")    //Russian with Cyrillic numerals
+// toLocaleString("el-GR-u-nu-grek")    // Greek with Greek numerals
+// toLocaleString("ka-GE-u-nu-geor")  // Georgian with Georgian numerals
+// toLocaleString("hy-AM-u-nu-armn")  // Armenian with Armenian numerals
+// toLocaleString("en-US-u-nu-roman") // Roman numerals
+// toLocaleString("ban-ID-u-nu-bali")  // Balinese numerals
+//   toLocaleString("km-KH-u-nu-khmr") // Khmer numerals
+// toLocaleString("my-MM-u-nu-mymr")  // Myanmar numerals
+//  toLocaleString("lo-LA-u-nu-laoo")    // Lao numerals
+//  toLocaleString("th-TH-u-nu-thai")   // Thai numerals
+//  toLocaleString("su-ID-u-nu-sund")   // Sundanese numerals
+// toLocaleString("jv-ID-u-nu-java")  //  Javanese numerals
+// toLocaleString("lep-IN-u-nu-lepc")  //Lepcha numerals
+// toLocaleString("sat-IN-u-nu-olck") // Ol Chiki numerals (Santali)
+
+
+
+
 
 
 
