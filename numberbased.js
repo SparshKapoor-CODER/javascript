@@ -167,18 +167,6 @@ console.log(Math.random() * 100); // Any random number between 0.0 to 100.0
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // language codes :
 
 
