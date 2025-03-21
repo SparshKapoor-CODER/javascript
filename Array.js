@@ -27,7 +27,9 @@ console.log(num1); // [1, 2, 3, 4, 5]
 // find()           -           returns the first element in the array that satisfies the provided testing function. Otherwise, it returns undefined.
 // findIndex()      -           returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1.
 // join()           -           creates and returns a new string by concatenating all of the elements in an array (or an array-like object), separated by commas or a specified separator string.
-
+// filter()         -           creates a new array with all elements that pass the test implemented by the provided function.
+// map()            -           creates a new array populated with the results of calling a provided function on every element in the calling array.
+// flat()           -           Returns a new array with all sub-array elements concatenated into it recursively up to the specified depth.
 
 num.push(6);
 console.log(num); // [1, 2, 3, 4, 5, 6]
@@ -61,3 +63,42 @@ console.log(num.indexOf(15)); // -1
 
 const n = num.join('-');
 console.log(n); // 1-6-7-8-4-5   return type is string
+
+const log = num.filter((num) => num > 4);
+console.log(log); // [6, 7, 8, 5]
+
+const a = num.map((num) => num * 2);
+console.log(a); // [2, 12, 14, 16, 8, 10]
+
+
+const myarr = num.slice(1,3);
+console.log(myarr);
+
+
+const myarr1 = num.splice(1,3);
+console.log(myarr1);
+
+
+
+// --------------------------------------------------------------------------------------------------------------------------
+
+
+
+const indian_catoon = ["Chota bheem", "Motu Patlu", "Little Krishna"];
+const Japanese_Catoon = ["Doraemon" , "Ninja Hattori","Shinchan"];
+
+indian_catoon.push(Japanese_Catoon);
+console.log(indian_catoon);    // array inside array
+indian_catoon.pop();
+
+const catoons = [...Japanese_Catoon,...indian_catoon];
+console.log(catoons);
+
+
+
+
+const numbers_inside_an_array = [1,2,3,4, [5,6,7],8,[9,10,[11,12]]];
+
+const understandable_array = numbers_inside_an_array.flat(Infinity);
+console.log(understandable_array);
+
