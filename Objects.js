@@ -82,3 +82,40 @@ console.log(obj5);
 
 
 // find more on browser console
+
+
+
+
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+const course = {
+    courseName : "Problem Solving with Python",
+    courseCode : "CSE1024",
+    numberOfCredits : 4,
+    facultyName : "Dr.Sparsh Kapoor",
+};
+
+// some ways to access the values
+
+console.log(course.courseName);
+
+const {facultyName} = course;   // de Structuring   ---->  Mostly used in React
+console.log(facultyName);
+
+const {numberOfCredits : credits} = course;
+console.log(credits);
+
+
+
+//  APIs   JASON
+
+// {
+//     "courseName" : "Problem Solving with Python",
+//     "courseCode" : "CSE1024",
+//     "numberOfCredits" : 4,
+//     "facultyName" : "Dr.Sparsh Kapoor",
+// };
