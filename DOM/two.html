@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .body{
+            background-color: #212121 ;
+            color:#f0f8ff;
+        }
+    </style>
+</head>
+<body class = "body">
+
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+        <div class="day">Sunday</div>
+    </div>
+</body>
+<script>
+    let query = document.querySelector(".parent")
+    console.log(query);
+    console.log(query.children);
+    console.log(query.children.length);
+    console.log(query.childNodes);
+    query.childNodes.forEach((item) => console.log(item))
+    query.childNodes.forEach((item) => console.log(item.nodeName))
+    console.log(query.classList);
+    console.log(query.classList.toString);
+
+
+
+    for(let i = 0;i<query.children.length;i++){
+        console.log(query.children[i].innerHTML);
+    }
+
+    let colors = ["#daa520", "#0f0f0f", "#f0f0f0", "#abcdef", "#123456", "#c0c0c0", "#ff69b4"]
+
+    for(let i = 0;i<query.children.length;i++){
+        query.children[i].style.color = colors[i];
+    }
+</script>
+</html>
